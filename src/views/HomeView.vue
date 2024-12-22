@@ -17,7 +17,7 @@ interface User {
 }
 
 const users: Ref<User[]> = ref([]);
- const apiUrl = 'http://localhost:3000/users'; // vai pilns URL uz serveri
+ const apiUrl = 'https://hockey-lottery-backend-2d87f1e6fb3c.herokuapp.com/api/users';
 
 fetch(apiUrl)
   .then(response => response.json())
